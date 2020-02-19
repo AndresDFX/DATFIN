@@ -1,9 +1,5 @@
-
-
 const index = (req,res)=>{
-    res.render('index', {
-        title: 'My webstore'
-    })
+    res.sendFile('index.html', {root: './views'});
 
 } 
 
