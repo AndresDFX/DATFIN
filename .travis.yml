@@ -1,10 +1,19 @@
 language: node_js
 node_js:
  - "node"
+notifications:
+  email:
+    - andres_dfx@hotmail.com
+jdk:
+  - oraclejdk8
+addons:
+  sonarcloud: true
+script:
+  - sonar-scanner -Dsonar.login=$SONAR_CLOUD -Dsonar.organization=andresdfx-github -Dsonar.projectKey=datfin -Dsonar.sources='./routes' -X
 deploy:
   provider: heroku
   api_key:
-    secure: "b349c23b-29b4-4615-a4d1-a9c0026c9163"
+    secure: $HEROKU_API_KEY
   app: datfin
 
  
