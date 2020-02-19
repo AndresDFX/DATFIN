@@ -4,8 +4,10 @@
   "description": "Data Finances System",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
+    "cover": "nyc --reporter=text --reporter=lcov npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "keywords": [],
@@ -21,7 +23,9 @@
     "node": "12.16.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.9",
     "mocha": "^7.0.1",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "nyc": "^15.0.0"
   }
 }
