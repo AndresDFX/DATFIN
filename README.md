@@ -1,6 +1,8 @@
 # DATFIN - Data Finances
 Descripcion..
 
+[![Known Vulnerabilities](https://snyk.io/test/github/AndresDFX/DATFIN/badge.svg?targetFile=package.json)](https://snyk.io/test/github/AndresDFX/DATFIN?targetFile=package.json)
+
 ## Comenzando 🚀
 Puedes obtener el proyecto de dos formas
 ```
