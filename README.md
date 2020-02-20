@@ -3,6 +3,8 @@ Descripcion..
 
 [![Known Vulnerabilities](https://snyk.io/test/github/AndresDFX/DATFIN/badge.svg?targetFile=package.json)](https://snyk.io/test/github/AndresDFX/DATFIN?targetFile=package.json)
 
+[![Coverage Status](https://coveralls.io/repos/github/AndresDFX/DATFIN/badge.svg?branch=master)](https://coveralls.io/github/AndresDFX/DATFIN?branch=master)
+
 ## Comenzando 🚀
 Puedes obtener el proyecto de dos formas
 ```
