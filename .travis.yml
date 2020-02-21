@@ -7,17 +7,21 @@ notifications:
 jdk:
   - oraclejdk8
 addons:
-  sonarcloud: true
+ sonarcloud: true
+
+cache:
+  directories:
+    - node_modules
 script:
-  - npm run cover
+  - npm run test
   - sonar-scanner -Dsonar.login=$SONAR_CLOUD -Dsonar.organization=andresdfx-github -Dsonar.projectKey=datfin -Dsonar.sources='./routes' -X
-after_success:
-  - npm run coveralls
+  - npm prune 
+  - npm prune --production
 deploy:
   provider: heroku
   api_key:
     secure: $HEROKU_API_KEY
   app: datfin
 
- 
+
 
