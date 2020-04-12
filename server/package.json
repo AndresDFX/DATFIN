@@ -1,7 +1,9 @@
 {
   "name": "DATFIN",
   "version": "1.0.0",
-  "description": "Data Finances System",
+  "private": true,
+  "description": "Data Finances System - Backend",
+  "author": "AndresDFX",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,18 +11,14 @@
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [],
-  "author": "andresdfx",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "cors": "^2.8.5",
-    "coverage": "^0.4.1",
     "express": "^4.17.1",
-    "istanbul": "^0.4.5",
     "joi": "^14.3.1",
-    "mocha": "^7.0.1",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "pg": "^8.0.0",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.5"
@@ -29,11 +27,13 @@
     "node": "12.16.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.9",
+    "coverage": "^0.4.1",
+    "coveralls": "^3.0.11",
     "env-test": "^1.0.0",
-    "mocha": "^7.0.1",
+    "istanbul": "^0.4.5",
+    "minimist": "^1.2.5",
+    "mocha": "^7.1.1",
     "mocha-lcov-reporter": "^1.3.0",
-    "nodemon": "^1.19.4",
-    "nyc": "^15.0.0"
+    "nodemon": "^2.0.2"
   }
 }
